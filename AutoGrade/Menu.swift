@@ -13,6 +13,7 @@ class Connection: ObservableObject {
     @Published var toStudentAttempt: Bool
     @Published var numQuestions: Int
     @Published var solutions: Array<String>
+    @Published var question_labels: Array<String>
     
     init() {
         self.inMenu = true
@@ -21,6 +22,7 @@ class Connection: ObservableObject {
         let num = 10
         self.numQuestions = num
         self.solutions = Array<String>(repeating:"", count: num)
+        self.question_labels = Array<String>(repeating:"", count: num)
     }
 } 
 

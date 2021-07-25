@@ -43,7 +43,19 @@ struct EnterSolutions: View {
     var body: some View {
         
         //ScrollView{
-        
+        HStack(alignment: .center){
+            VStack(alignment: .trailing){
+                ForEach((0...(self.connection.numQuestions - 1)), id: \.self){
+                    label in TextField("#", text:
+                                        $connection.question_labels[label])
+                        .frame(width:40, height: 21)
+                }
+            }
+            .padding()
+                .padding(.bottom)
+            .   edgesIgnoringSafeArea(.bottom)
+                .animation(.easeOut(duration: 0.16))
+            
             VStack(alignment: .leading){
             
                 ForEach((0...(self.connection.numQuestions - 1)), id: \.self){
@@ -54,6 +66,9 @@ struct EnterSolutions: View {
                 .padding(.bottom)
                 .edgesIgnoringSafeArea(.bottom)
                 .animation(.easeOut(duration: 0.16))
+            
+          
+        }
     
             HStack(alignment: .bottom){
                 Button("Add", action: addQuestion)

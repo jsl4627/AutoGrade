@@ -14,10 +14,12 @@
 		6D158A08268799050093536E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D158A07268799050093536E /* Menu.swift */; };
 		6D158A0A26879BE90093536E /* EnterSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D158A0926879BE90093536E /* EnterSolutions.swift */; };
 		6D9041C12690D8EE004F889A /* StudentAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9041C02690D8EE004F889A /* StudentAttempt.swift */; };
+		6D9041C72694791E004F889A /* check_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9041C62694791E004F889A /* check_box.png */; };
+		6D9041CC26AC7DC4004F889A /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9041CB26AC7DC4004F889A /* checkBox.swift */; };
+		6D9041D026ACA6BC004F889A /* x_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9041CF26ACA6BC004F889A /* x_box.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D1589F4268798C90093536E /* AutoGrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoGrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1589F7268798C90093536E /* AutoGradeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoGradeApp.swift; sourceTree = "<group>"; };
 		6D1589F9268798C90093536E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D1589FB268798D20093536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +29,10 @@
 		6D158A07268799050093536E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		6D158A0926879BE90093536E /* EnterSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSolutions.swift; sourceTree = "<group>"; };
 		6D9041C02690D8EE004F889A /* StudentAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttempt.swift; sourceTree = "<group>"; };
+		6D9041C62694791E004F889A /* check_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_box.png; path = ../../check_box.png; sourceTree = "<group>"; };
+		6D9041C826AC7854004F889A /* AutoGrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoGrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9041CB26AC7DC4004F889A /* checkBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
+		6D9041CF26ACA6BC004F889A /* x_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x_box.png; path = ../../x_box.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,23 +50,17 @@
 			isa = PBXGroup;
 			children = (
 				6D1589F6268798C90093536E /* AutoGrade */,
-				6D1589F5268798C90093536E /* Products */,
+				6D9041C826AC7854004F889A /* AutoGrade.app */,
 			);
-			sourceTree = "<group>";
-		};
-		6D1589F5268798C90093536E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6D1589F4268798C90093536E /* AutoGrade.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6D1589F6268798C90093536E /* AutoGrade */ = {
 			isa = PBXGroup;
 			children = (
+				6D9041CF26ACA6BC004F889A /* x_box.png */,
 				6D1589F7268798C90093536E /* AutoGradeApp.swift */,
 				6D1589F9268798C90093536E /* ContentView.swift */,
+				6D9041C62694791E004F889A /* check_box.png */,
 				6D1589FB268798D20093536E /* Assets.xcassets */,
 				6D158A00268798D20093536E /* Info.plist */,
 				6D158A01268798D20093536E /* AutoGrade.entitlements */,
@@ -68,6 +68,7 @@
 				6D158A07268799050093536E /* Menu.swift */,
 				6D158A0926879BE90093536E /* EnterSolutions.swift */,
 				6D9041C02690D8EE004F889A /* StudentAttempt.swift */,
+				6D9041CB26AC7DC4004F889A /* checkBox.swift */,
 			);
 			path = AutoGrade;
 			sourceTree = "<group>";
@@ -97,7 +98,7 @@
 			);
 			name = AutoGrade;
 			productName = AutoGrade;
-			productReference = 6D1589F4268798C90093536E /* AutoGrade.app */;
+			productReference = 6D9041C826AC7854004F889A /* AutoGrade.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +124,7 @@
 				Base,
 			);
 			mainGroup = 6D1589EB268798C90093536E;
-			productRefGroup = 6D1589F5268798C90093536E /* Products */;
+			productRefGroup = 6D1589EB268798C90093536E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -137,6 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9041D026ACA6BC004F889A /* x_box.png in Resources */,
+				6D9041C72694791E004F889A /* check_box.png in Resources */,
 				6D1589FF268798D20093536E /* Preview Assets.xcassets in Resources */,
 				6D1589FC268798D20093536E /* Assets.xcassets in Resources */,
 			);
@@ -153,6 +156,7 @@
 				6D9041C12690D8EE004F889A /* StudentAttempt.swift in Sources */,
 				6D158A0A26879BE90093536E /* EnterSolutions.swift in Sources */,
 				6D1589FA268798C90093536E /* ContentView.swift in Sources */,
+				6D9041CC26AC7DC4004F889A /* checkBox.swift in Sources */,
 				6D1589F8268798C90093536E /* AutoGradeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
